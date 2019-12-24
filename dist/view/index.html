@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home | write less后台管理系统</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="//admin.write-less.top/write-less-admin-fe/dist/favicon.ico"><link href="//admin.write-less.top/write-less-admin-fe/dist/css/common.css?cc397131cbf89bc7f37c" rel="stylesheet"><link href="//admin.write-less.top/write-less-admin-fe/dist/css/index.css?cc397131cbf89bc7f37c" rel="stylesheet"></head>
+
+<body class="easyui-layout">
+	<div data-options="region:'north'" style="height: 130px; padding-left: 30px;">
+		<h1><strong style="color: #4892DD;">write less</strong>后台管理系统</h1>
+		<h3 style="color: red">禁止任何管理员乱封禁用户，乱审核留言，一经查实，封号处理!</h3>
+		<div class="user-info">
+			欢迎您, <a class="admin-name">test</a>!
+		</div>
+	</div>
+	<div data-options="region:'south'" style="height:100px; padding-left: 30px;">
+		<h3>Copyright © 2019, Write Less.</h3>
+		<p>粤ICP备19140862号-1</p>
+	</div>
+	<div data-options="region:'west',title:'主菜单',split:true,selected:true" style="width:250px;">
+		<div id="navLeft" class="easyui-accordion" style="width:250px;">
+			<div title=" Home" data-options="iconCls:'icon-large-smartart'" selected="selected"></div>
+			<div title=" 留言管理" data-options="iconCls:'icon-large-chart'" style="overflow:auto;padding:10px;">
+				<a href="./message-list.html"><i class="fa fa-bookmark"></i> 留言列表 &raquo;</a>
+				<a href="javascript:void(0)"><i class="fa fa-plus-circle"></i> 添加留言 &raquo;</a>
+			</div>
+			<div title=" 用户管理" data-options="iconCls:'icon-large-clipart'" style="overflow:auto; padding:10px">
+				<a href="javascript:void(0)"><i class="fa fa-user"></i> 用户列表 &raquo;</a>
+				<a href="javascript:void(0)"><i class="fa fa-plus-circle"></i> 添加用户 &raquo;</a>
+			</div>
+			<div title=" 日志管理" data-options="iconCls:'icon-large-shapes'" style="padding:10px;">
+				<a href="javascript:void(0)"><i class="fa fa-calendar-plus-o"></i> 操作日志 &raquo;</a>
+				<a href="javascript:void(0)"><i class="fa fa-calendar-check-o"></i> 登录日志 &raquo;</a>
+				<a href="javascript:void(0)"><i class="fa fa-calendar-times-o"></i> 系统日志 &raquo;</a>
+			</div>
+		</div>
+	</div>
+	<div data-options="region:'center',title:'主页'" style="padding:5px;background:#eee;">
+		<div class="home-tip">
+			<h1><i class="fa fa-warning"></i> 警告</h1>
+			<h2>该管理系统还处在测试阶段，还有很多已知和未知的bug没有处理，希望各位管理员暂时不要使用。完善的管理系统预计在一月底会正式上线，谢谢理解！</h2>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//admin.write-less.top/write-less-admin-fe/dist/js/base.js?cc397131cbf89bc7f37c"></script><script type="text/javascript" src="//admin.write-less.top/write-less-admin-fe/dist/js/index.js?cc397131cbf89bc7f37c"></script></body>
+
+</html>

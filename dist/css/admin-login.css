@@ -1,0 +1,56 @@
+/*
+ * @Author: ZenGx1n 
+ * @Date: 2019-12-23 14:01:39 
+ * @Last Modified by: ZenGx1n
+ * @Last Modified time: 2019-12-24 09:07:45
+ */
+
+#viewer {
+    position: relative;
+    padding: 0 60px;
+    top: -155px;
+    left: -40px;
+    font-size: 54px;
+    line-height: 60px;
+    text-align: left;
+}
+
+body {
+    font-family: verdana, helvetica, arial, sans-serif;
+    font-size: 12px;
+    background: #E9ECEF;
+}
+
+
+.demo-info {
+    padding: 0 0 12px 0;
+}
+
+.demo-tip {
+    display: none;
+}
+
+.label-top {
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+.center {
+    position: absolute;
+    left: 36%;
+    top: 10%;
+    text-align: center;
+}
+
+.err-div {
+    text-align: left;
+    color: #DC3545;
+    display: none;
+}
+
+#submit {
+    float: right;
+}
+

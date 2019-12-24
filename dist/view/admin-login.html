@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>管理员登录 | write less后台管理系统</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="//admin.write-less.top/write-less-admin-fe/dist/favicon.ico"><link href="//admin.write-less.top/write-less-admin-fe/dist/css/common.css?cc397131cbf89bc7f37c" rel="stylesheet"><link href="//admin.write-less.top/write-less-admin-fe/dist/css/admin-login.css?cc397131cbf89bc7f37c" rel="stylesheet"></head>
+
+<body>
+    <div class="center">
+        <a href="http://www.write-less.top"> <img src="//admin.write-less.top/write-less-admin-fe/dist/resource/logo.jpg" /></a>
+        <h1>Sign in to write less后台管理系统</h1>
+        <h2 style="color: lightcoral;">只有管理员才能登录后台管理系统哦!</h2>
+        <div style="margin:20px 0;"></div>
+        <div class="easyui-panel" style="width:400px;padding:50px 60px">
+            <div style="margin-bottom:20px">
+                <input id="username" class="easyui-textbox" prompt="Username" iconWidth="28"
+                    style="width:100%;height:34px;padding:10px;">
+            </div>
+            <div style="margin-bottom:20px">
+                <input id="pass" class="easyui-passwordbox" prompt="Password" iconWidth="28"
+                    style="width:100%;height:34px;padding:10px">
+            </div>
+            <div>
+                <a id="submit" class="easyui-linkbutton" iconCls="icon-ok" style="width:100%;height:32px">Sign In</a>
+            </div>
+        </div>
+        <div id="viewer"></div>
+        <div class="err-div">
+            <h1><i class="icon fa fa-ban err-msg"> 错误提示信息</i></h1>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//admin.write-less.top/write-less-admin-fe/dist/js/base.js?cc397131cbf89bc7f37c"></script><script type="text/javascript" src="//admin.write-less.top/write-less-admin-fe/dist/js/admin-login.js?cc397131cbf89bc7f37c"></script></body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>留言管理 | write less后台管理系统</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="//admin.write-less.top/write-less-admin-fe/dist/favicon.ico"><link href="//admin.write-less.top/write-less-admin-fe/dist/css/common.css?cc397131cbf89bc7f37c" rel="stylesheet"><link href="//admin.write-less.top/write-less-admin-fe/dist/css/message-list.css?cc397131cbf89bc7f37c" rel="stylesheet"></head>
+
+<body class="easyui-layout">
+	<div data-options="region:'north'" style="height: 130px; padding-left: 30px;">
+		<h1><strong style="color: #4892DD;">write less</strong>后台管理系统</h1>
+		<h3 style="color: red">禁止任何管理员乱封禁用户，乱审核留言，一经查实，封号处理!</h3>
+		<div class="user-info">
+			欢迎您, <a class="admin-name">test</a>!
+		</div>
+	</div>
+	<div data-options="region:'south'" style="height:100px; padding-left: 30px;">
+		<h3>Copyright © 2019, Write Less.</h3>
+		<p>粤ICP备19140862号-1</p>
+	</div>
+	<div data-options="region:'west',title:'主菜单',split:true,selected:true" style="width:250px;">
+		<div id="navLeft" class="easyui-accordion" style="width:250px;">
+			<div title=" Home" data-options="iconCls:'icon-large-smartart'"></div>
+			<div title=" 留言管理" data-options="iconCls:'icon-large-chart'" style="overflow:auto;padding:10px;"
+				selected="selected">
+				<a href="javascript:void(0)" style="color: #18A3F7;"><i class="fa fa-bookmark"></i> 留言列表 &raquo;</a>
+				<a href="javascript:void(0)"><i class="fa fa-plus-circle"></i> 添加留言 &raquo;</a>
+			</div>
+			<div title=" 用户管理" data-options="iconCls:'icon-large-clipart'" style="overflow:auto; padding:10px">
+				<a href="javascript:void(0)"><i class="fa fa-user"></i> 用户列表 &raquo;</a>
+				<a href="javascript:void(0)"><i class="fa fa-plus-circle"></i> 添加用户 &raquo;</a>
+			</div>
+			<div title=" 日志管理" data-options="iconCls:'icon-large-shapes'" style="padding:10px;">
+				<a href="javascript:void(0)"><i class="fa fa-calendar-plus-o"></i> 操作日志 &raquo;</a>
+				<a href="javascript:void(0)"><i class="fa fa-calendar-check-o"></i> 登录日志 &raquo;</a>
+				<a href="javascript:void(0)"><i class="fa fa-calendar-times-o"></i> 系统日志 &raquo;</a>
+			</div>
+		</div>
+	</div>
+	<div data-options="region:'center',title:'主页'" style="padding:5px;background:#eee;">
+		<div>
+			<div id="tb">
+				<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true"
+					onclick="javascript:alert('Add')">Add</a>
+				<a href="#" class="easyui-linkbutton" iconCls="icon-cut" plain="true"
+					onclick="javascript:alert('Cut')">Cut</a>
+				<a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true"
+					onclick="javascript:alert('Save')">Save</a>
+			</div>
+			<table style="width:100%" title="用户管理页面" 
+				 toolbar="#tb">
+				<thead>
+					<tr>
+						<th field="id" width="4%">ID</th>
+						<th field="username" width="8%">用户ID</th>
+						<th field="gender" width="30%">内容</th>
+						<th field="introduction" width="8%">状态</th>
+						<th field="age" width="5%">点赞数</th>
+						<th field="post" width="5%">收藏数</th>
+						<th field="createTime" width="13%">创建时间</th>
+						<th field="permission" width="13%">修改时间</th>
+						<th field="operation" width="14%">操作</th>
+					</tr>
+				</thead>
+				<tbody class="msg-tbody"></tbody>
+				
+			</table>
+			<div class="easyui-panel">
+				<div class="easyui-pagination" data-options="total:114"></div>
+			</div>
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//admin.write-less.top/write-less-admin-fe/dist/js/base.js?cc397131cbf89bc7f37c"></script><script type="text/javascript" src="//admin.write-less.top/write-less-admin-fe/dist/js/message-list.js?cc397131cbf89bc7f37c"></script></body>
+
+</html>
